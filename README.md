@@ -4,13 +4,6 @@
 
 Este proyecto implementa un stack de observabilidad utilizando **Spring Boot 3**, **Prometheus** y **Grafana** bajo contenedores de Docker. Permite monitorear métricas en tiempo real como el uso de CPU, memoria JVM y peticiones HTTP.
 
-## 📋 Requisitos Previos
-
-Antes de empezar, asegúrate de tener instalado:
-* **Java 17** o superior.
-* **Maven** (para compilar el proyecto).
-* **Docker Desktop** (con Docker Compose activo).
-
 # 📊 Monitoreo de Aplicación Spring Boot con Prometheus y Grafana (Docker)
 
 ## 📌 Descripción del Proyecto
@@ -25,7 +18,15 @@ Este proyecto implementa un sistema de monitoreo para una aplicación **Spring B
 - Micrometer  
 - Docker  
 - Prometheus  
-- Grafana  
+- Grafana
+
+ Dependencies
+
+Spring Web: Para crear los endpoints que vamos a monitorear.
+
+Spring Boot Actuator: El motor que genera las métricas.
+
+Prometheus: (Busca "Prometheus") para que Micrometer prepare los datos para Grafana.
 
 ---
 
